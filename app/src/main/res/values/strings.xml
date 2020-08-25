@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wargag</string>
+    <string name="nav_header_title">Профиль</string>
+    <string name="nav_header_subtitle">Твой статус</string>
+
+    <string name="menu_feed">Лента</string>
+    <string name="menu_favorites">Избранное</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_detail">Подробно</string>
+    <string name="application_id">YOUR WARGAMING APP_ID HERE</string>
+</resources>

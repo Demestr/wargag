@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navFeed">
+
+    <fragment
+        android:id="@+id/navFeed"
+        android:name="com.lipssoftware.wargag.ui.feed.FeedFragment"
+        android:label="@string/menu_feed"
+        tools:layout="@layout/fragment_content" >
+        <action
+            android:id="@+id/action_navContent_to_navDetail"
+            app:destination="@id/navDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navFavorites"
+        android:name="com.lipssoftware.wargag.ui.favorites.FavoritesFragment"
+        android:label="@string/menu_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_navFavorites_to_navDetail"
+            app:destination="@id/navDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navSettings"
+        android:name="com.lipssoftware.wargag.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navDetail"
+        android:name="com.lipssoftware.wargag.ui.detail.DetailFragment"
+        android:label="@string/menu_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="postDetail"
+            app:argType="com.lipssoftware.wargag.data.entities.Post" />
+    </fragment>
+</navigation>
